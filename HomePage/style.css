@@ -44,12 +44,7 @@ nav{
 .info{
     background-color: #F0FFFF;;
 }
-.blogbtn {
-    color: black;
-    text-align: center;
- 
 
-}
 
 /* card */
 .first-card{
@@ -103,3 +98,4 @@ text-fill-color: transparent;
 .footer{
     background-color: #014647;
 }
+

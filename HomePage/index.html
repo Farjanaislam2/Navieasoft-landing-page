@@ -4,7 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Naviea</title>
+    <!-- owl carousel -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,794 +19,789 @@
     />
   </head>
   <body>
-    <!-- navbar start -->
+  <section class="container ps-2 pe-2">
+      <!-- navbar start -->
 
-    <section>
-      <nav class="navbar navbar-expand-lg ps-4 pe-5">
-        <div class="container-fluid">
-          <h2 class="nav-text fw-bolder" href="#">Naviea</h2>
+      <section>
+        <nav class="navbar navbar-expand-lg ps-4 pe-5">
+          <div class="container-fluid">
+            <h2 class="nav-text fw-bolder" href="#">Naviea</h2>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Course
+                  </a>
+                  <ul class="dropdown-menu text-light bg-secondary">
+                    <li>
+                      <a class="dropdown-item text-light" href="#">UI/UX</a>
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Java</a></li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Laravel</a>
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">.net</a></li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Html+css</a>
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Js</a></li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Flutter</a>
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Mern</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Academic Programme
+                  </a>
+                  <ul class="dropdown-menu text-light bg-secondary">
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Class 1-10</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Class 11-12</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light">IT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light">BCS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light">Professional</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light">About us</a>
+                </li>
+              </ul>
+              <form class="d-flex gap-3" role="search">
+                <button type="button" class="btn btn-outline-danger">OR</button>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="login dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    LogIn
+                  </button>
+                  <ul class="dropdown-menu bg-secondary">
+                    <li><a class="dropdown-item" href="#">Student</a></li>
+                    <li><a class="dropdown-item" href="#">Teacher</a></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+  
+      <!-- navbar end -->
+  
+      <!-- Slider start -->
+      <section class="top-banner">
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide"
+          data-bs-touch="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item banner active">
+              <div class="row">
+                <div class="col-lg-5 ">
+                  <img
+                    src="images/banner-image/1st-banner.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-lg-7 col-md-7 ps-5 d-flex align-items-center">
+                  <div class="text-light">
+                    <h1>Make Your Career Through Online Education</h1>
+                    <p>Complete guideline for 9th to 10th class students</p>
+                    <div class="d-flex flex-column mt-5 mb-5">
+                      <button class="btn btn-light mt-3  col-11 col-md-4">Start learning</button>
+                    <button class="btn btn-light mt-3  col-11 col-md-4">See Course</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item banner">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img
+                    src="images/banner-image/1st-banner.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-lg-7 d-flex align-items-center">
+                  <div class="text-light">
+                    <h1>Make Your Career Through Online Education</h1>
+                    <p>Complete guideline for 9th to 10th class students</p>
+                    <div class="d-flex flex-column mt-5  mb-5 w-25">
+                      <button class="btn btn-light mt-3">Start learning</button>
+                    <button class="btn btn-light mt-3">See Course</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <button
-            class="navbar-toggler"
+            class="carousel-control-prev"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-light"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Course
-                </a>
-                <ul class="dropdown-menu text-light bg-secondary">
-                  <li>
-                    <a class="dropdown-item text-light" href="#">UI/UX</a>
-                  </li>
-                  <li><a class="dropdown-item text-light" href="#">Java</a></li>
-                  <li>
-                    <a class="dropdown-item text-light" href="#">Laravel</a>
-                  </li>
-                  <li><a class="dropdown-item text-light" href="#">.net</a></li>
-                  <li>
-                    <a class="dropdown-item text-light" href="#">Html+css</a>
-                  </li>
-                  <li><a class="dropdown-item text-light" href="#">Js</a></li>
-                  <li>
-                    <a class="dropdown-item text-light" href="#">Flutter</a>
-                  </li>
-                  <li><a class="dropdown-item text-light" href="#">Mern</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Academic Programme
-                </a>
-                <ul class="dropdown-menu text-light bg-secondary">
-                  <li>
-                    <a class="dropdown-item text-light" href="#">Class 1-10</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-light" href="#">Class 11-12</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light">IT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light">BCS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light">Professional</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light">About us</a>
-              </li>
-            </ul>
-            <form class="d-flex gap-3" role="search">
-              <button type="button" class="btn btn-outline-danger">OR</button>
-              <!-- Example single danger button -->
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="login dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  LogIn
-                </button>
-                <ul class="dropdown-menu bg-secondary">
-                  <li><a class="dropdown-item" href="#">Student</a></li>
-                  <li><a class="dropdown-item" href="#">Teacher</a></li>
-                </ul>
-              </div>
-            </form>
-          </div>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </nav>
-    </section>
-
-    <!-- navbar end -->
-
-    <!-- Slider start -->
-    <section class="top-banner">
-      <div
-        id="carouselExampleControlsNoTouching"
-        class="carousel slide"
-        data-bs-touch="false"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item banner active">
-            <div class="row">
-              <div class="col-lg-5 ">
-                <img
-                  src="images/banner-image/1st-banner.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-lg-7 col-md-7 ps-5 d-flex align-items-center">
-                <div class="text-light">
-                  <h1>Make Your Career Through Online Education</h1>
-                  <p>Complete guideline for 9th to 10th class students</p>
-                  <div class="d-flex flex-column mt-5 mb-5 w-25">
-                    <button class="btn btn-light mt-3">Start learning</button>
-                  <button class="btn btn-light mt-3">See Course</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item banner">
-            <div class="row">
-              <div class="col-lg-5">
-                <img
-                  src="images/banner-image/1st-banner.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-lg-7 d-flex align-items-center">
-                <div class="text-light">
-                  <h1>Make Your Career Through Online Education</h1>
-                  <p>Complete guideline for 9th to 10th class students</p>
-                  <div class="d-flex flex-column mt-5  mb-5 w-25">
-                    <button class="btn btn-light mt-3">Start learning</button>
-                  <button class="btn btn-light mt-3">See Course</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      </section>
+      <!-- Slider end -->
+  <!-- card start -->
+  <div class="d-flex gap-3 first-card justify-content-center">
+    <div class="card  card1 text-danger-emphasis" style="width: 18rem;">
+  
+      <div class="card-body  d-flex align-items-center flex-column p-5 shadow-lg">
+      <h4 class="card-text">1.8 Lakh+</h4>
+      <p>Learning Materials</p>
+      </div>
+  
+      </div>
+    <div class="card text-info" style="width: 18rem;">
+      <div class="card-body d-flex align-items-center p-5 flex-column  shadow-lg">
+        <h4 class="card-text">25 Lakh+</h4>
+        <p>Students</p>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControlsNoTouching"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControlsNoTouching"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  
       </div>
-    </section>
-    <!-- Slider end -->
-<!-- card start -->
-<div class="d-flex gap-3 first-card justify-content-center">
-  <div class="card  card1 text-danger-emphasis" style="width: 18rem;">
-
-    <div class="card-body  d-flex align-items-center flex-column p-5 shadow-lg">
-    <h4 class="card-text">1.8 Lakh+</h4>
-    <p>Learning Materials</p>
-    </div>
-
-    </div>
-  <div class="card text-info" style="width: 18rem;">
-    <div class="card-body d-flex align-items-center p-5 flex-column  shadow-lg">
-      <h4 class="card-text">25 Lakh+</h4>
-      <p>Students</p>
+    <div class="card  text-danger" style="width: 18rem;">
+      <div class="card-body d-flex align-items-center flex-column p-5 shadow-lg">
+        <h4 class="card-text">50+</h4>
+        <p>Teachers</p>
+        </div>
+  
       </div>
-
-    </div>
-  <div class="card  text-danger" style="width: 18rem;">
-    <div class="card-body d-flex align-items-center flex-column p-5 shadow-lg">
-      <h4 class="card-text">50+</h4>
-      <p>Teachers</p>
-      </div>
-
-    </div>
-  <div class="card card4  text-warning" style="width: 18rem;">
-    <div class="card-body d-flex align-items-center flex-column p-5  shadow-lg">
-      <h4 class="card-text">10 Lakh+</h4>
-      <p>App Download</p>
-      </div>
-    </div>
-</div>
-</div>
-<!-- card end -->
-
-<!-- second card start -->
-<section class="mt-5">
-  <div class="row row-cols-1 row-cols-md-2 g-4 p-5 m-5">
-    <div class="col d-flex">
-      <div class="card w-50 shadow-lg">
-        <img src="images/card-image1/pic1.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Class 1-10 </h5>
-          <p class="card-text">Free video ,live class</p>
+    <div class="card card4  text-warning" style="width: 18rem;">
+      <div class="card-body d-flex align-items-center flex-column p-5  shadow-lg">
+        <h4 class="card-text">10 Lakh+</h4>
+        <p>App Download</p>
         </div>
       </div>
-    </div>
-    <div class="col d-flex">
-      <div class="card w-50 shadow-lg">
-        <img src="images/card-image1/pic2.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Class 11-12</h5>
-          <p class="card-text">University,medical</p>
-        </div>
-      </div>
-    </div>
-    <div class="col d-flex">
-      <div class="card w-50 shadow-lg">
-        <img src="images/card-image1/pic4.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">University</h5>
-          <p class="card-text">Skills,english,Freelanci,IT</p>
-        </div>
-      </div>
-    </div>
-    <div class="col d-flex">
-      <div class="card w-50 shadow-lg">
-        <img src="images/card-image1/pic5.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Job Preparation</h5>
-          <p class="card-text">BCS, Bank jobs,govt job</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- second card end -->
-
-<!-- Brands start-->
-<section class="partner">
-  <h3 class="text-center mt-5">Our Brand</h3>
-  <div class="logo-container ">
-    <img  class="partner-logo w-50"
-              src="images/logo/logo1.png"
-              class="d-block "
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo2.png"
-              class="d-block"
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo3.png"
-              class="d-block"
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo4.png"
-              class="d-block"
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo5.png"
-              class="d-block"
-              alt="..."
-            />
-  </div>
-</section>
-<!-- Brands end-->
-
-<!-- second Banner start -->
-<section>
-  <div class="carousel-inner">
-    <div class="carousel-item banner2 active">
-      <div class="row">
-       
-        <div class="col-lg-7 col-md-7 ps-5 d-flex align-items-center">
-          <div class="text-light">
-            <h3>Learning through live classes is now very easy</h3>
-           
-            <div class="d-flex flex-column mt-2 mb-5 w-50">
-              <button class="btn btn-light mt-3">Live and recorded class</button>
-            <button class="btn btn-light mt-3">Weekly Exam</button>
-            <button class="btn btn-light mt-3">Live MCQ exam Exam</button>
-            <button class="btn btn-light mt-3">Class Note</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 p-5">
-          <img
-            src="images/study1 1.jpg"
-            class="d-block w-100 border border-radius"
-            alt="..."
-          />
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item banner">
-      <div class="row">
-        <div class="col-lg-5">
-          <img
-            src="images/banner-image/1st-banner.png"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="col-lg-7 d-flex align-items-center">
-          <div class="text-light">
-            <h1>Make Your Career Through Online Education</h1>
-            <p>Complete guideline for 9th to 10th class students</p>
-            <div class="d-flex flex-column mt-5  mb-5 w-25">
-              <button class="btn btn-light mt-3">Start learning</button>
-            <button class="btn btn-light mt-3">See Course</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
   </div>
-</section>
-<!-- second Banner end -->
-<!-- Third card section start -->
-<section>
-  <div class="text-center mt-4">
-    <h3>Comprehensive progran of study and exam <br/> preapration for primary, secondary and higher secondary</h3>
-    <p>Live classes,exams,class notes, animated videos from best mentros throughout the year.</p>
-  </div>
-  <div>
-    <div class="card-group gap-4 p-5">
-      <div class="card w-25 shadow-lg">
-        <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <p class="card-text text-primary">12 th class -science</p>
-          <p class="card-text text-secondary">12 th class -Commerce</p>
-          <p class="card-text text-danger">12 th class -Arts</p>
+  <!-- card end -->
+  
+  <!-- second card start -->
+  <section class="mt-5 w-100 ">
+    <div class="row row-cols-1 row-cols-md-2 g-2 p-5 m-5 mx-auto ">
+  
+      <div class="d-flex  mx-auto  col-11 col-lg-5 border border-2 p-2 rounded-3 justify-content-center align-items-center  shadow-lg">
+  
+        <img class="w-25 m-2 rounded" src="images/card-image1/pic1.png"alt="Card image" />
+        <div class='mx-auto p-0 p-lg-2'>
+            <p class="fs-4 my-1 py-0 fw-bold">Class 1-10</p>
+            
+            <p class="d-none d-sm-block my-1 py-0 text-start">Free video, live class</p>
+            
         </div>
-      </div>
-      <div class="card w-25 shadow-lg">
-        <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <p class="card-text text-primary">11 th class -science</p>
-          <p class="card-text text-secondary">11 th class -Commerce</p>
-          <p class="card-text text-danger">11 th class -Arts</p>
-        </div>
-      </div>
-      <div class="card w-25 shadow-lg">
-        <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <p class="card-text text-primary">10 th class -science</p>
-          <p class="card-text text-secondary">10 th class -Commerce</p>
-          <p class="card-text text-danger">10 th class -Arts</p>
-        </div>
-      </div>
-      <div class="card w-25 shadow-lg">
-        <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <p class="card-text text-primary">9 th class -science</p>
-          <p class="card-text text-secondary">9 th class -Commerce</p>
-          <p class="card-text text-danger">9 th class -Arts</p>
-        </div>
-      </div>
-      <div class="card w-25 shadow-lg">
-        <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-25" alt="...">
-        <div class="card-body">
-          <p class="card-text text-primary">Class-8</p>
-          <p>Science,Math,ICT, Bangla,English</p>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex justify-content-between ps-5 pe-5">
-    <div>
-      <p>To know Course details <a href="#">Click Here</a></p>
-    </div>
-    <div>
-      <a href="#">See all</a>
-    </div>
-  </div>
-</section>
-<!-- Third card section end -->
-
-<!-- 4th card section start -->
-<section>
-  <h3 class="text-center">12th class- Science</h3>
-  <div>
-    <div class="card-group gap-3 p-5">
-      <div class="card">
-        <img src="images/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-        <div class="d-flex gap-1">
-          <h5 class="card-title">1550tk</h5>
-          <p><small>1 month fee</small> </p>
-        </div>
-          <p class="card-text">-4 subject</p>
-          <p class="card-text">-Live class for all subjects</p>
-          <p class="card-text">-Every class note and Homework</p>
-          <p class="card-text">-Weekly Exam</p>
-          <p class="card-text">-Weekly Test</p>
-          <button class="btnn w-full">Book Now</button>
-          <p>To know details <a href="">Click here</a></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-        <div class="d-flex gap-1">
-          <h5 class="card-title">1550tk</h5>
-          <p><small>1 month fee</small> </p>
-        </div>
-          <p class="card-text">-4 subject</p>
-          <p class="card-text">-Live class for all subjects</p>
-          <p class="card-text">-Every class note and Homework</p>
-          <p class="card-text">-Weekly Exam</p>
-          <p class="card-text">-Weekly Test</p>
-          <button class="btnn w-full">Book Now</button>
-          <p>To know details <a href="">Click here</a></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-        <div class="d-flex gap-1">
-          <h5 class="card-title">1550tk</h5>
-          <p><small>1 month fee</small> </p>
-        </div>
-          <p class="card-text">-4 subject</p>
-          <p class="card-text">-Live class for all subjects</p>
-          <p class="card-text">-Every class note and Homework</p>
-          <p class="card-text">-Weekly Exam</p>
-          <p class="card-text">-Weekly Test</p>
-          <button class="btnn w-full">Book Now</button>
-          <p>To know details <a href="">Click here</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 4th card section end -->
-
-<!-- our client start-->
-<section class="partner">
-  <h3 class="text-center mt-5">Our Client</h3>
-  <div class="logo-container ">
-    <img  class="partner-logo w-50"
-              src="images/logo/logo1.png"
-              class="d-block "
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo2.png"
-              class="d-block"
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo3.png"
-              class="d-block"
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo4.png"
-              class="d-block"
-              alt="..."
-            />
-    <img  class="w-50"
-              src="images/logo/logo5.png"
-              class="d-block"
-              alt="..."
-            />
-  </div>
-</section>
-<!-- our client end-->
-<!-- 5th card section start -->
-<section>
- <div class="text-center mt-4">
-  <h3>Complete preparation for Medical,Engineering,University with us.</h3>
-  <p class="text-primary">Find Your dream,We are always with you</p>
- </div>
- <div>
-  <div class="row row-cols-1 row-cols-md-3 p-5">
-    <div class="col">
-      <div class="card w-75">
-        <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
-        <img src="images/card-image2/doctors-transparent-icon-10_prev_ui 1.png" class="card-img-top position-absolute" alt="...">
-        <div class="card-body">
-          <p class="card-title text-center">Medical Admission <br/> course-2023</p>
-      <a href="">Details -></a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card w-75">
-        <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
-        <img src="images/card-image2/Education,_Studying,_University,_Alumni_-_icon 1.png" class="card-img-top position-absolute" alt="...">
-        <div class="card-body">
-          <p class="card-title text-center">versity Admission <br/> course-2023</p>
-      <a href="">Details -></a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card w-75">
-        <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
-        <img src="images/card-image2/favpng_vector-graphics-clip-art-career-icon-design 1.png" class="card-img-top position-absolute" alt="...">
-        <div class="card-body">
-          <p class="card-title text-center">Job Admission <br/> course-2023</p>
-      <a href="">Details -></a>
-        </div>
-      </div>
-    </div>
-   
-  </div>
- </div>
-</section>
-<!-- 5th card section end -->
-
-<!-- 2nd banner start -->
-<section>
-  <div class="d-flex justify-content-around align-items-center info">
-    <div class="text-center ">
-<h1>Search your Course</h1>
-<p>Build your library for your career and personal growth</p>
-<button class="joining-btn p-3">Join Here</button>
-
-    </div>
-    <div class="">
-
-<img class="position-absolute" src="images/i2global-02 1.png" alt="" srcset="">
-<img src="images/img01 1.png" alt="" srcset="">
-    </div>
-  </div>
-</section>
-<!-- 2nd banner end -->
-<!-- Blog start -->
-<h1 class="blogbtn shadow-lg mt-5 border-2">Our Blog</h1>
-<div class="mt-5 d-flex justify-content-center align-items-center">
-  <div class="row row-cols-1 row-cols-md-3 g-4 w-75">
-    <div class="col ">
-      <div class="card h-100">
-        <img src="images/blog/360_F_237571142_VA5kg8IaT9F7kaCXZ5K9vaQLbcYYioX4 1.png" class="card-img-top w-full " alt="...">
-       
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/blog/flutter1 1.png" class="card-img-top" alt="...">
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/blog/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">     
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/blog/java 1.png" class="card-img-top" alt="...">     
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/blog/laravel 1.png" class="card-img-top" alt="...">     
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/blog/premium_photo-1661499751432-a5ee116ae3f3 1.png" class="card-img-top" alt="...">     
-      </div>
-    </div>
-   
-  </div>
-</div>
-<!-- Blog end -->
-
-<section>
-  <div class="mt-5 d-flex justify-content-center align-items-center">
-    <img src="images/cover-page2 1.png" alt="" srcset="">
-  </div>
-
-  <div>
-    <section class="partner">
-      <h3 class="text-center mt-5">Our Partner</h3>
-      <div class="logo-container ">
-        <img  class="partner-logo w-50"
-                  src="images/logo/logo1.png"
-                  class="d-block "
-                  alt="..."
-                />
-        <img  class="w-50"
-                  src="images/logo/logo2.png"
-                  class="d-block"
-                  alt="..."
-                />
-        <img  class="w-50"
-                  src="images/logo/logo3.png"
-                  class="d-block"
-                  alt="..."
-                />
-        <img  class="w-50"
-                  src="images/logo/logo4.png"
-                  class="d-block"
-                  alt="..."
-                />
-        <img  class="w-50"
-                  src="images/logo/logo5.png"
-                  class="d-block"
-                  alt="..."
-                />
-      </div>
-    </section>
-  </div>
-</section>
-
-<section>
-  <!-- Footer -->
-<footer class="text-center footer text-lg-start text-white">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-   
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h1 class="text-uppercase companyName fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary"></i>NAVIEA
-          </h1>
-          <h5>USA Office</h5>
-          <p>Address: Head office,jamira Queens,NY</p>
-          <p>US 11432- Faie Shopping Center Southport </p>
-          <p>QLD, Australia +61 7 5556 6600</p>
-          <p>Email: discountache@gmail.com</p>
-          <p>Mobile: +1347-206-9324</p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Bangladesh dhaka Office
-          </h6>
-          <p>
-            Address: Shop-6, 3rd floor,Gulshan pink
-          </p>
-          <p>
-           Shopping Complex,Gulshan Avenue,
-          </p>
-          <p>
-           Email: discountache@gmail.com
-          </p>
-          <p>
-           Mobile: 01311805398
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            About of navieae learning
-          </h6>
-          <p>
-           <ul>. Privacy policy</ul>
-          </p>
-          <p>
-           <ul>. Privacy policy</ul>
-          </p>
-          <p>
-          <ul>. Cookie policy</ul>
-          </p>
-          <p>
-          <ul>. Who we are</ul>
-          </p>
-          <p>
-           <ul>.Term and condition</ul>
-          </p>
         
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Get to know us</h6>
-          <p>
-            <ul>. Careers</ul>
-            </p>
-            <p>
-            <ul>. Blog</ul>
-            </p>
-            <p>
-             <ul>. All categories</ul>
-            </p>
-            <p>
-             <ul>. start offer</ul>
-            </p>
-            <p>
-             <ul>. Careers Support</ul>
-            </p>
-        </div>
-        <!-- Grid column -->
+    </div>
+    <div class="d-flex  mx-auto  col-11 col-lg-5   border border-2 p-2 rounded-3 d-flex justify-content-center align-items-center shadow-lg">
+  
+      <img class="w-25 m-2 rounded" src="images/card-image1/pic2.png"alt="Card image" />
+      <div class='mx-auto p-0 p-lg-2'>
+          <p class="fs-4 my-1 py-0 fw-bold">Class 1-10</p>
+          
+          <p class="d-none d-sm-block my-1 py-0 text-start">Free video, live class</p>
+          
       </div>
-      <!-- Grid row -->
+      
+  </div>
+  <div class="d-flex mx-auto  col-11 col-lg-5  border border-2 p-2 rounded-3 d-flex justify-content-center align-items-center  shadow-lg">
+  
+    <img class="w-25 m-2 rounded" src="images/card-image1/pic5.png"alt="Card image" />
+    <div class='mx-auto p-0 p-lg-2'>
+        <p class="fs-4 my-1 py-0 fw-bold">Class 1-10</p>
+        
+        <p class="d-none d-sm-block my-1 py-0 text-start">Free video, live class</p>
+        
+    </div>
+    
+  </div>
+  <div class="d-flex  mx-auto  col-11 col-lg-5  border border-2 p-2 rounded-3 d-flex justify-content-center align-items-center shadow-lg">
+  
+    <img class="w-25 m-2 rounded" src="images/card-image1/pic4.png"alt="Card image" />
+    <div class='mx-auto p-0 p-lg-2'>
+        <p class="fs-4 my-1 py-0 fw-bold">Job preparation</p>
+        
+        <p class="d-none d-sm-block my-1 py-0 text-start">BCS, Bank job,Govt job</p>
+        
+    </div>
+    
+
+  </section>
+  <!-- second card end -->
+  
+  <!-- Brands start-->
+  <section class="mb-5">
+   
+    <section class="mt-5 mb-5">
+      <div>
+        <marquee scrollment="20">
+          <img src="images/logo/logo1.png" alt="" srcset="">
+          <img src="images/logo/logo2.png" alt="" srcset="">
+          <img src="images/logo/logo3.png" alt="" srcset="">
+          <img src="images/logo/logo4.png" alt="" srcset="">
+          <img src="images/logo/logo5.png" alt="" srcset="">
+        </marquee>
+      </div>
+       </section>
+  </section>
+  <!-- Brands end-->
+  
+  <!-- second Banner start -->
+  <section>
+    <div class="carousel-inner">
+      <div class="carousel-item banner2 active">
+        <div class="row">
+         
+          <div class="col-lg-7 col-md-7 ps-5 d-flex align-items-center">
+            <div class="text-light mt-3">
+              <h3>Learning through live classes is now very easy</h3>
+             
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column mt-2 mb-5 w-50">
+                  <button class="btn btn-light mt-3">Live and recorded class</button>
+                <button class="btn btn-light mt-3">Weekly Exam</button>
+                <button class="btn btn-light mt-3">Live MCQ exam Exam</button>
+                <button class="btn btn-light mt-3">Class Note</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 p-5">
+            <img
+              src="images/study1 1.jpg"
+              class="d-block w-100 border border-radius"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item banner">
+        <div class="row">
+          <div class="col-lg-5">
+            <img
+              src="images/banner-image/1st-banner.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-7 d-flex align-items-center">
+            <div class="text-light">
+              <h1>Make Your Career Through Online Education</h1>
+              <p>Complete guideline for 9th to 10th class students</p>
+              <div class="d-flex flex-column mt-5  mb-5 w-25">
+                <button class="btn btn-light mt-3">Start learning</button>
+              <button class="btn btn-light mt-3">See Course</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
-  <!-- Section: Links  -->
+  <!-- second Banner end -->
+  <!-- Third card section start -->
+  <section class="container">
+    <div class="text-center mt-4">
+      <h3>Comprehensive progran of study and exam <br/> preapration for primary, secondary and higher secondary</h3>
+      <p>Live classes,exams,class notes, animated videos from best mentros throughout the year.</p>
+    </div>
+    <div>
+      <div class="card-group gap-4 row row-cols-1 row-cols-md-2 row-cols-lg-5 g-2 p-5 m-5 mx-auto ">
+        <div class="card d-flex  mx-auto  col-11 col-lg-5 border border-2 p-2 rounded-3 justify-content-center align-items-center  shadow-lg">
+          <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-auto" alt="...">
+          <div class="card-body">
+            <p class="card-text text-primary">12 th class -science</p>
+            <p class="card-text text-secondary">12 th class -Commerce</p>
+            <p class="card-text text-danger">12 th class -Arts</p>
+          </div>
+        </div>
+        <div class="card d-flex  mx-auto  col-11 col-lg-5 border border-2 p-2 rounded-3 justify-content-center align-items-center  shadow-lg">
+          <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-auto" alt="...">
+          <div class="card-body">
+            <p class="card-text text-primary">11 th class -science</p>
+            <p class="card-text text-secondary">11 th class -Commerce</p>
+            <p class="card-text text-danger">11 th class -Arts</p>
+          </div>
+        </div>
+        <div class="card d-flex  mx-auto  col-11 col-lg-5 border border-2 p-2 rounded-3 justify-content-center align-items-center  shadow-lg">
+          <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-auto" alt="...">
+          <div class="card-body">
+            <p class="card-text text-primary">10 th class -science</p>
+            <p class="card-text text-secondary">10 th class -Commerce</p>
+            <p class="card-text text-danger">10 th class -Arts</p>
+          </div>
+        </div>
+        <div class="card d-flex  mx-auto  col-11 col-lg-5 border border-2 p-2 rounded-3 justify-content-center align-items-center  shadow-lg">
+          <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-auto" alt="...">
+          <div class="card-body">
+            <p class="card-text text-primary">9 th class -science</p>
+            <p class="card-text text-secondary">9 th class -Commerce</p>
+            <p class="card-text text-danger">9 th class -Arts</p>
+          </div>
+        </div>
+        <div class="card d-flex  mx-auto  col-11 col-lg-5 border border-2 p-2 rounded-3 justify-content-center align-items-center  shadow-lg">
+          <img src="images/khatabook-icon-filled-256 1.png" class="card-img-top w-auto" alt="...">
+          <div class="card-body">
+            <p class="card-text text-primary">Class-8</p>
+            <p>Science,Math,ICT, Bangla,English</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between ps-5 pe-5">
+      <div>
+        <p>To know Course details <a href="#">Click Here</a></p>
+      </div>
+      <div>
+        <a href="#">See all</a>
+      </div>
+    </div>
+  </section>
+  <!-- Third card section end -->
+  
+  <!-- 4th card section start -->
+  <section>
+    <h3 class="text-center mt-3">12th class- Science</h3>
+    <div>
+      <div class="card-group gap-4  p-5">
+        <div class="card">
+          <img src="images/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <div class="d-flex gap-1">
+            <h5 class="card-title">1550tk</h5>
+            <p><small>1 month fee</small> </p>
+          </div>
+            <p class="card-text">-4 subject</p>
+            <p class="card-text">-Live class for all subjects</p>
+            <p class="card-text">-Every class note and Homework</p>
+            <p class="card-text">-Weekly Exam</p>
+            <p class="card-text">-Weekly Test</p>
+            <button class="btnn w-full">Book Now</button>
+            <p>To know details <a href="">Click here</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <div class="d-flex gap-1">
+            <h5 class="card-title">1550tk</h5>
+            <p><small>1 month fee</small> </p>
+          </div>
+            <p class="card-text">-4 subject</p>
+            <p class="card-text">-Live class for all subjects</p>
+            <p class="card-text">-Every class note and Homework</p>
+            <p class="card-text">-Weekly Exam</p>
+            <p class="card-text">-Weekly Test</p>
+            <button class="btnn w-full">Book Now</button>
+            <p>To know details <a href="">Click here</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <div class="d-flex gap-1">
+            <h5 class="card-title">1550tk</h5>
+            <p><small>1 month fee</small> </p>
+          </div>
+            <p class="card-text">-4 subject</p>
+            <p class="card-text">-Live class for all subjects</p>
+            <p class="card-text">-Every class note and Homework</p>
+            <p class="card-text">-Weekly Exam</p>
+            <p class="card-text">-Weekly Test</p>
+            <button class="btnn w-full">Book Now</button>
+            <p>To know details <a href="">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 4th card section end -->
+  
+  <!-- our client start-->
+  <section class="partner">
+    <section class="mt-5 mb-5">
+      <div>
+        <marquee scrollment="20">
+          <img src="images/logo/logo1.png" alt="" srcset="">
+          <img src="images/logo/logo2.png" alt="" srcset="">
+          <img src="images/logo/logo3.png" alt="" srcset="">
+          <img src="images/logo/logo4.png" alt="" srcset="">
+          <img src="images/logo/logo5.png" alt="" srcset="">
+        </marquee>
+      </div>
+       </section>
+  </section>
+  <!-- our client end-->
+  <!-- 5th card section start -->
+  <section>
+   <div class="text-center mt-4">
+    <h3>Complete preparation for Medical,Engineering,University with us.</h3>
+    <p class="text-primary">Find Your dream,We are always with you</p>
+   </div>
+   <div>
+    <div class="row row-cols-1 gap-lg-0 gap-3 row-cols-md-4 p-5">
+      <div class="col">
+        <div class="card">
+          <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
+          <img src="images/card-image2/doctors-transparent-icon-10_prev_ui 1.png" class="card-img-top position-absolute" alt="...">
+          <div class="card-body">
+            <p class="card-title text-center">Medical Admission <br/> course-2023</p>
+        <a href="">Details -></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
+          <img src="images/349698-200 1.png" class="card-img-top position-absolute" alt="...">
+          <div class="card-body">
+            <p class="card-title text-center">Engineering <br/> course-2023</p>
+        <a href="">Details -></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
+          <img src="images/card-image2/Education,_Studying,_University,_Alumni_-_icon 1.png" class="card-img-top position-absolute" alt="...">
+          <div class="card-body">
+            <p class="card-title text-center">versity Admission <br/> course-2023</p>
+        <a href="">Details -></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card ">
+          <img src="images/card-image2/Ellipse 6.png" class="card-img-top" alt="...">
+          <img src="images/card-image2/favpng_vector-graphics-clip-art-career-icon-design 1.png" class="card-img-top position-absolute" alt="...">
+          <div class="card-body">
+            <p class="card-title text-center">Job Admission <br/> course-2023</p>
+        <a href="">Details -></a>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+   </div>
+  </section>
+  <!-- 5th card section end -->
+  
+  <!-- 2nd banner start -->
+  <section>
 
-  <!-- Copyright -->
-  <div class="text-center p-4 d-flex justify-content-around gap-5" style="background-color: rgba(0, 0, 0, 0.025);">
-   <div><H5>We accept</H5></div>
-   <div>
-    <img src="images/we-accept 1.png" alt="">
-   </div>
-   <div>
-    <img src="images/icons/facebook.svg" alt="">
-    <img src="images/icons/google.svg" alt="">
-    <img src="images/icons/linkedin.svg" alt="">
-    <img src="images/icons/twitter.svg" alt="">
-   </div>
+    <div class="d-block align-items-center info w-100 d-lg-flex  mt-lg-4">
+      
+      <div class="mx-auto p-3 p-md-4 mt-lg-5 w-100 text-center">
+        
+          <h1>Search your Course</h1>
+          <p>Build your library for your career and personal growth</p>
+          <button class="joining-btn p-3">Join Here</button>
+          
+          
+      </div>
+      <div class="w-100 my-md-4 position-relative">
+        
+  
+          <img class="position-absolute  top-0 start-0 translate-middle" src="images/i2global-02 1.png" alt="" srcset="">
+          <img class="" src="images/img01 1.png" alt="" srcset="">
+              
+      </div>
   </div>
-  <div class="text-center mb-4">
-    <p>Terms & condition | Refund Poicy | Privacy policy</p>
-    <p>2023 naviea Technologies Bangladesh Ltd</p>
+
+  </section>
+  <!-- 2nd banner end -->
+  <!-- Blog start -->
+  <div class="p-2 mx-auto shadow-lg mt-5 border-2 rounded-2" style="width: 250px;">
+    <h1 class="text-center">Our Blog</h1>
   </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-</section>
+  <div class="mt-5 d-flex justify-content-center align-items-center">
+    <div class="row row-cols-1 row-cols-md-3 g-4 w-75">
+      <div class="col ">
+        <div class="card h-100">
+          <img src="images/blog/360_F_237571142_VA5kg8IaT9F7kaCXZ5K9vaQLbcYYioX4 1.png" class="card-img-top w-full " alt="...">
+         
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/blog/flutter1 1.png" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/blog/happy-positive-school-teacher-against-260nw-2007116861 1.png" class="card-img-top" alt="...">     
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/blog/java 1.png" class="card-img-top" alt="...">     
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/blog/laravel 1.png" class="card-img-top" alt="...">     
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/blog/premium_photo-1661499751432-a5ee116ae3f3 1.png" class="card-img-top" alt="...">     
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <!-- Blog end -->
+  
+  <section class="mt-5 mb-5">
+    <div>
+      <marquee scrollment="20">
+        <img src="images/logo/logo1.png" alt="" srcset="">
+        <img src="images/logo/logo2.png" alt="" srcset="">
+        <img src="images/logo/logo3.png" alt="" srcset="">
+        <img src="images/logo/logo4.png" alt="" srcset="">
+        <img src="images/logo/logo5.png" alt="" srcset="">
+      </marquee>
+    </div>
+     </section>
+    </div>
+  </section>
+  
+  <section>
+    <!-- Footer -->
+  <footer class="text-center footer text-lg-start text-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+     
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5 w-100">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h1 class="text-uppercase companyName fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>NAVIEA
+            </h1>
+            <h5>USA Office</h5>
+            <p>Address: Head office,jamira Queens,NY</p>
+            <p>US 11432- Faie Shopping Center Southport </p>
+            <p>QLD, Australia +61 7 5556 6600</p>
+            <p>Email: discountache@gmail.com</p>
+            <p>Mobile: +1347-206-9324</p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Bangladesh dhaka Office
+            </h6>
+            <p>
+              Address: Shop-6, 3rd floor,Gulshan pink
+            </p>
+            <p>
+             Shopping Complex,Gulshan Avenue,
+            </p>
+            <p>
+             Email: discountache@gmail.com
+            </p>
+            <p>
+             Mobile: 01311805398
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              About of navieae learning
+            </h6>
+            <p>
+             <ul>. Privacy policy</ul>
+            </p>
+            <p>
+             <ul>. Privacy policy</ul>
+            </p>
+            <p>
+            <ul>. Cookie policy</ul>
+            </p>
+            <p>
+            <ul>. Who we are</ul>
+            </p>
+            <p>
+             <ul>.Term and condition</ul>
+            </p>
+          
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Get to know us</h6>
+            <p>
+              <ul>. Careers</ul>
+              </p>
+              <p>
+              <ul>. Blog</ul>
+              </p>
+              <p>
+               <ul>. All categories</ul>
+              </p>
+              <p>
+               <ul>. start offer</ul>
+              </p>
+              <p>
+               <ul>. Careers Support</ul>
+              </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4 d-lg-flex d-none p-5 justify-content-around gap-5" style="background-color: rgba(0, 0, 0, 0.025);">
+     <div><H5>We accept</H5></div>
+     <div>
+      <img src="images/we-accept 1.png" alt="">
+     </div>
+     <div class="">
+      <img src="images/icons/facebook.svg" alt="">
+      <img src="images/icons/google.svg" alt="">
+      <img src="images/icons/linkedin.svg" alt="">
+      <img src="images/icons/twitter.svg" alt="">
+     </div>
+    </div>
+    <div class="text-center p-5 mb-4">
+      <p>Terms & condition | Refund Poicy | Privacy policy</p>
+      <p>2023 naviea Technologies Bangladesh Ltd</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  </section>
+  </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ <script src="   https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+ <script>
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+ </script>
   </body>
 </html>
